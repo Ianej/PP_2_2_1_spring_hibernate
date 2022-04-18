@@ -32,7 +32,7 @@ public class MainApp {
          System.out.println(user.getCar()==null ? "" : "Series = "+(user.getCar().getSeries()));
          System.out.println();
       }
-      System.out.println(userService.carOwner("auto1", 5).getFirstName());
+      System.out.println(userService.getUserByModelAndSeries("auto1", 5).getFirstName());
       context.close();
    }
 }
